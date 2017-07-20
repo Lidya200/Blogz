@@ -5,11 +5,19 @@
 {% block content %}
 
 <h1>Build a Blog</h1>
-{% for post in posts %}
-<h2><a href="/singlepost?id={{post.id}}">{{post.title}}</a></h2>
-<p>{{post.content}}</p>
+
+
+{% if blog_id %}
+
+<h3>{{blog.title}}</h3>
+<p>{{blog.content}}
+
+{% else %}
+{% for blog in blogs %}
+<h2><a href="?id={{blog.id}}">{{blog.title}}</a></h2>
+<p>{{blog.content}}</p>
 <hr>
 {% endfor %}
 
-
+{% endif %}
 {% endblock %}
