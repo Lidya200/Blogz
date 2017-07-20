@@ -29,13 +29,20 @@
     .error {
         color: red;
     }
+    .right {
+        float: right;
+    }
 
 </style>
 <body>
 <div class="nav">
     <ul>
-        <li><a href="/blog">Main Page</a></li>
-        <li><a href="/newpost">Add a Blog</a></li>
+        <li><a href="/">home</a></li>
+        <li><a href="/blog">all posts</a></li>
+        <li><a href="/newpost">new posts</a></li>
+        <li class="right"><a href="/login">login</a></li>
+       <li class="right"><a href="/login">logout</a></li>
+          
     </ul>
 </div>
     {% block content %}
