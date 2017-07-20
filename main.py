@@ -14,7 +14,7 @@ db = SQLAlchemy(app)
 
 app.secret_key = 'A0Zr98j/3yX R~XHH!jmN]LWX/,?RT'
 
-class Blog(db.Model):
+class Blog(db.Model): #model class
 
     id = db.Column(db.Integer, primary_key=True)
     title = db.Column(db.String(120))
