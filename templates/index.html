@@ -2,12 +2,12 @@
 
 {% block content %}
 
-
+<ul>
+    <h1>blog users!</h1>
 {% for user in users%}
-<p><a herf ='/blog?owner_id={{user.id}}'>
+<li><a href='/blog?owner_id={{user.id}}'>
 
-
-{{user.usernmae}}</a></p>
-
+{{user.username}}</a></li>
 {% endfor%}
+</ul>
 {% endblock %}
